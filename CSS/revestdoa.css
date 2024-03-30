@@ -1,0 +1,392 @@
+                            /*Fonte Poppins*/
+                            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                            /*Fonte Poppins Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                            /*Font Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                                /*CSS Reset*/
+
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                    text-decoration: none;
+                                    border: none;
+                                
+                                }
+                                
+                                :root {
+                                    --cor-titulo: #390000;
+                                    --tag-goth: #7F4999;
+                                    --tag-large: #4CA29D;
+                                    --tag-punk: #24FF00; /* Variável da cor do filtro */
+                                    --tag-y2k: #00D1FF;
+                                    --tag-lacoste: #1C6137;
+                                    --tag-opium: #78005E;
+                                    --tag-personalizado: #FF7A00;
+                                    --tag-grunge: #A60404;
+                                    --card: #FFECA4;
+                                
+                                }
+                                
+                                body {
+                                    background-color: #f8f1d7;
+                                }
+                                
+                                
+                                .titulo-1 {
+                                    font-size: 5rem;
+                                    color: var(--cor-titulo);
+                                    font-weight: 500;
+                                
+                                }
+                                
+                                .titulo-2 {
+                                    font-size: 3rem;
+                                    font-weight: 100;
+                                    color: var(--cor-titulo);
+                                
+                                }
+                                
+                                .goth {
+                                    background-color: var(--tag-goth);
+                                }
+                                
+                                .large {
+                                    background-color: var(--tag-large);
+                                }
+                                
+                                .punk {
+                                    background-color: var(--tag-punk);
+                                }
+                                
+                                .y2k {
+                                    background-color: var(--tag-y2k);
+                                }
+                                
+                                .lacoste {
+                                    background-color: var(--tag-lacoste);
+                                }
+                                
+                                .opium {
+                                    background-color: var(--tag-opium);
+                                }
+                                
+                                .personalizado {
+                                    background-color: var(--tag-personalizado);
+                                }
+                                
+                                .grunge {
+                                    background-color: var(--tag-grunge);
+                                }
+                                
+                                .cabecalho {
+                                    height: 120px;
+                                    width: 100%;
+                                }
+                                
+                                .cabecalho-superior {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    height: 60%;
+                                    padding: 20px;
+                                    background-color: #1C3C3A;
+                                }
+                                
+                                .cabecalho-inferior {
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 40%;
+                                    background-color: #FFB800;
+                                }
+                                
+                                .logo img {
+                                    height: 80px;
+                                }
+                                
+                                .container-search {
+                                    position: relative;
+                                }
+                                
+                                .search {
+                                    padding: 10px;
+                                    height: 40px;
+                                    width: 500px;
+                                    border-radius: 5px;
+                                    outline: none;
+                                    font-size: 15px;
+                                    background-color: #FFECA4;
+                                }
+                                
+                                .lupa {
+                                    position: absolute;
+                                    background-color: transparent;
+                                    right: 10px;
+                                    top: 5px;
+                                
+                                }
+                                
+                                .lupa img {
+                                    height: 25px;
+                                }
+                                
+                                .icones {
+                                    display: flex;
+                                    gap: 20px;
+                                    font-size: 25px;
+                                }
+                                
+                                .cabecalho-inferior ul {
+                                    display: flex;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    height: 100%;
+                                }
+                                
+                                li {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    list-style: none;
+                                    gap: 15px;
+                                    width: 20%;
+                                    height: 100%;
+                                    transition: 0.3s all;
+                                    cursor: pointer;
+                                }
+                                
+                                li:hover {
+                                    background-color: rgba(232, 166, 0, 0.501)
+                                }
+                                
+                                li a {
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    color: #fff;
+                                    font-size: 12px;
+                                }
+                                
+                                .nav-icon {
+                                    height: 30px;
+                                }
+                                
+                        /*Conteudo Principal*/
+
+main{
+    position: relative;
+    width: 100%;
+    height: 1200px; 
+    background-image: url(../Imagens/Rectangle\ 56.svg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding-top: 80px;  
+}
+
+.container-instituicao{
+    width: 80%;
+    height: 300px;
+    background-color: #ffeca4;
+    border-radius: 15px;
+    margin-left: 125px;
+    padding-top: 25px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    
+}
+
+#instituicao-1{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-imagem-instituicao{
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.imagem-instituicao{
+    width: 100%;
+    height: 100%;
+}
+
+.container-texto-instituicao{
+    position: relative;
+    width: 660px;
+    height: 250px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-instituicao{
+    font-family: 'Bebas Neue';
+}
+
+.texto-instituicao{
+    font-family: 'poppins';
+    font-size: 18px;
+}
+
+#imagem-ccaf{
+    width: 390px;
+    height: 250px;
+}
+
+#imagem-casahope{
+    width: 420px;
+    height: 250px;
+}
+
+                                            /*Rodapé*/
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background-color: #1c3c3a;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-footer{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright-footer{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.central-atendimento{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-integrantes{
+    position: relative;
+    width: 35%;
+    height: 100%;
+}
+
+.redes-sociais{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-titulo-atendimento{
+    position: relative;
+    font-family: 'poppins';
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+
+.titulo-footer{
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: 550;
+    color: #ffb800;
+}
+
+
+.conteudo-atendimento{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;   
+    margin-top: 5px;
+}
+
+.imagem-atendimento{
+    width: 50px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 105px;
+}
+
+#imagem-atendimento-1{
+    margin-top: 0;
+}
+
+.texto-footer{
+    color: #f8f1d7;
+    font-family: 'poppins';
+    padding-top: 7px;
+    font-size: 17px;
+}
+
+#numero-footer{
+    padding-top: 23px;
+}
+
+.integrantes{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.texto-integrantes{
+    color: #f8f1d7;
+    font-family: 'poppins';
+    width: 150px;
+    margin-left: 185px;
+    margin-bottom: 3px;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+#imagem-copyright{
+    width: 25px;
+    height: 25px;
+}
+
+#container-titulo-redes{
+    text-align: center;
+    padding-top: 17px;
+}
+
+#titulo-redes-sociais{
+    font-size: 23px;
+}
+
+.imagens-redes{
+    width: 100%;
+    height: 80px;
+}
+
+.imagem-redes{
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#img-1{
+    margin-left: 110px;
+}
