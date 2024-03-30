@@ -5,102 +5,330 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
+
 }
 
-header{
-    height: 200px;
+:root {
+    --cor-titulo: #390000;
+    --tag-goth: #7F4999;
+    --tag-large: #4CA29D;
+    --tag-punk: #24FF00;
+    --tag-y2k: #00D1FF;
+    --tag-lacoste: #1C6137;
+    --tag-opium: #78005E;
+    --tag-personalizado: #FF7A00;
+    --tag-grunge: #A60404;
+    --card: #FFECA4;
+
 }
 
-#container-header{
+body {
+    background-color: #F8F1D7;
+}
+
+
+.titulo-1 {
+    font-size: 5rem;
+    color: var(--cor-titulo);
+    font-weight: 500;
+
+}
+
+.titulo-2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--cor-titulo);
+
+}
+
+.goth {
+    background-color: var(--tag-goth);
+}
+
+.large {
+    background-color: var(--tag-large);
+}
+
+.punk {
+    background-color: var(--tag-punk);
+}
+
+.y2k {
+    background-color: var(--tag-y2k);
+}
+
+.lacoste {
+    background-color: var(--tag-lacoste);
+}
+
+.opium {
+    background-color: var(--tag-opium);
+}
+
+.personalizado {
+    background-color: var(--tag-personalizado);
+}
+
+.grunge {
+    background-color: var(--tag-grunge);
+}
+
+.cabecalho {
+    height: 120px;
     width: 100%;
-    height: 50%;
-    background-color: #1C3C3A;
+}
+
+.cabecalho-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    height: 60%;
+    padding: 20px;
+    background-color: #1C3C3A;
 }
 
-nav{
-    width: 100%;
-    height: 50%;
-    background-color: #FFB800;
+.cabecalho-inferior {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-right: 50px;
+    height: 40%;
+    background-color: #FFB800;
 }
 
-nav a{
-    text-decoration: none;
-    color: #FFFFFF;
+.logo img {
+    height: 80px;
 }
 
-ul {
+.container-search {
+    position: relative;
+}
+
+.search {
+    padding: 10px;
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    background-color: #FFECA4;
+}
+
+.lupa {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    top: 5px;
+
+}
+
+.lupa img {
+    height: 25px;
+}
+
+.icones {
     display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.cabecalho-inferior ul {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    list-style: none;
     height: 100%;
-}
-
-ul img{
-    height: 50px;
 }
 
 li {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'poppins';
+    list-style: none;
+    gap: 15px;
+    width: 20%;
     height: 100%;
-}
-
-input{
-    width: 600px;
-    height: 50px;
-    border-radius: 15px;
-    padding: 20px;
-    font-family: 'prompt';
-    font-size: 18px;
-    background-color: #FFECA4;
-    outline: none;
-}
-
-#barra-pesquisa{
-    position: relative;
-}
-
-.search{
-    background-color: transparent;
-    position: absolute;
-    right: 10px;
-    top: 5px;    
-}
-
-.search img{
-    height: 40px;
-}
-
-#icon{
-    height: 50px;
+    transition: 0.3s all;
     cursor: pointer;
 }
 
-#logo-imagem{
-    height: 100px;
-    cursor: pointer;
+li:hover {
+    background-color: rgba(232, 166, 0, 0.501)
 }
 
-#header-direita{
+li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav-icon {
+    height: 30px;
+}
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+}
+
+.outono {
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Bebas Neue';
+
+
+
+
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    /* background-color: purple; */
+    margin-top: 20px;
+
+}
+
+.card {
+    height: 500px;
+    width: 350px;
+    background-color: var(--card);
+    border-radius: 10px;
+    font-family: 'poppins';
+}
+
+.img-card {
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    height: 40%;
+    width: 100%;
+    padding: 5px;
+}
+
+.titulo-roupa {
+    width: 100%;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+.tags {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.tamanho p {
+    color: #1C3C3A;
+    font-weight: 550;
+}
+
+.preco span {
+    color: #A60404;
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-icons img {
+    height: 20px;
+
+}
+
+.btn-garimpar {
+    height: 50px;
+    width: 170px;
+    color: #FFB800;
+    background-color: #1C3C3A;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-family: 'prompt';
+    font-weight: 600;
+}
+
+.brechos{
+    width: 100%;
+    margin-top: 20px;
+    height: 700px;
+    background-color: red;
+}
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #1C3C3A;
+    font-family: "bebas neue";
+}
+
+.titulo-section{
+    color: #FFB800;
+    font-family: "bebas neue";
+}
+
+.container-carrossel{
+    width: 100%;
+    height: 80%;
+    background-color: blue;
+}
+
+.teste{
+    height: 100%;
+    background-color: red;
 }
