@@ -169,8 +169,11 @@ li a {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    max-width: 1400px;
+    align-items: center;
     height: auto;
     margin: auto;
 }
@@ -190,9 +193,6 @@ main {
     text-align: center;
     font-family: 'Bebas Neue';
 
-
-
-
 }
 
 .container-card {
@@ -207,12 +207,12 @@ main {
 
 }
 
-.card {
-    height: 500px;
+.card-roupa {
+    height: 550px;
     width: 350px;
     background-color: var(--card);
     border-radius: 10px;
-    font-family: 'poppins';
+    font-family: 'prompt';
 }
 
 .img-card {
@@ -244,8 +244,12 @@ main {
     width: 100%;
     padding: 10px;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 0.7rem;
 
+}
+
+.titulo-roupa h3 {
+    font-size: 1.4rem;
 }
 
 .tags {
@@ -253,6 +257,7 @@ main {
     justify-content: space-around;
     width: 100%;
 }
+
 
 .tag {
     display: flex;
@@ -264,6 +269,7 @@ main {
     color: #fff;
     font-size: 10px;
 }
+
 
 .tamanho p {
     color: #1C3C3A;
@@ -290,24 +296,27 @@ main {
 }
 
 .btn-garimpar {
-    height: 50px;
-    width: 170px;
+    height: 70px;
+    width: 250px;
     color: #FFB800;
     background-color: #1C3C3A;
     font-size: 1.5rem;
     border-radius: 5px;
     font-family: 'prompt';
     font-weight: 600;
+    margin: 60px 0px;
 }
 
-.brechos{
+.brechos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin-top: 20px;
     height: 700px;
-    background-color: red;
 }
 
-.header-section{
+.header-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,18 +326,22 @@ main {
     font-family: "bebas neue";
 }
 
-.titulo-section{
+
+.titulo-section {
     color: #FFB800;
     font-family: "bebas neue";
 }
 
-.container-carrossel{
-    width: 100%;
+.container-carrossel {
+    width: 1400px;
     height: 80%;
     background-color: blue;
 }
 
-.teste{
+.teste {
     height: 100%;
     background-color: red;
+    height: 600px;
+    object-fit: cover;
+
 }
