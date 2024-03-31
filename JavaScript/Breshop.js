@@ -4,12 +4,18 @@ var selo = document.querySelector('.selo-beneficiente')
 
 // adicionando evento de click
 
-selo.addEventListener('click', detalhes)
+selo.addEventListener('mouseover', mostraDetalhes)
+selo.addEventListener('mouseleave', esconde)
 
 
 
 // função que apresentará detalhes do card
-function detalhes() {
+function mostraDetalhes() {
   selo.classList.add('selo-detalhes')
-  paragrafo.classList('texto-visivel')
+  paragrafo.classList.add('texto-visivel')
+}
+
+function esconde() {
+  selo.classList.remove('selo-detalhes')
+  paragrafo.classList.remove('texto-visivel')
 }

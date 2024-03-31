@@ -358,25 +358,32 @@ main {
     position: absolute;
     right: -40px;
     top: -60px;
-    transition: 0.4s all;
+    transition: 0.2s all;
+    cursor: pointer;
+
 }
 
 .selo-detalhes{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:400px;
-    border-radius: 60px;
-    padding: 30px;
+    width:440px;
+    border-radius: 100px;
+    padding: 40px;
+    
+  
 }
 
 .detalhes{
-    display: none;
-    width: 250px;
+    font-size: 0px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
+    transition: 0.2s all;
 }
 
 .texto-visivel{
-    display: block;
+ font-size: 18px;
+
+
+
 }
