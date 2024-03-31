@@ -26,8 +26,9 @@
 }
 
 body {
-    background-color: #f8f1d7;
+    background-color: #f8f1d7 !important;
 }
+
 
 
 .titulo-1 {
@@ -312,6 +313,10 @@ main {
     font-family: 'prompt';
     font-weight: 600;
     margin: 60px 0px;
+}
+
+.btn-garimpar img {
+    height: 40px;
 }
 
 .brechos {
