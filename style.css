@@ -15,7 +15,7 @@
     --cor-titulo: #390000;
     --tag-goth: #7F4999;
     --tag-large: #4CA29D;
-    --tag-punk: #24FF00; /* Variável da cor do filtro */
+    --tag-punk: #24FF00;
     --tag-y2k: #00D1FF;
     --tag-lacoste: #1C6137;
     --tag-opium: #78005E;
@@ -26,9 +26,8 @@
 }
 
 body {
-    background-color: #f8f1d7 !important;
+    background-color: #F8F1D7;
 }
-
 
 
 .titulo-1 {
@@ -170,11 +169,8 @@ li a {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 100%;
-    align-items: center;
+    max-width: 1400px;
     height: auto;
     margin: auto;
 }
@@ -193,28 +189,25 @@ main {
 .titulo {
     text-align: center;
     font-family: 'Bebas Neue';
-
 }
 
 .container-card {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    /* background-color: purple; */
-    margin-top: 70px;
+    margin-top: 20px;
 
 }
 
-.card-roupa {
-    position: relative;
-    height: 550px;
+.card {
+    height: 500px;
     width: 350px;
     background-color: var(--card);
     border-radius: 10px;
-    font-family: 'prompt';
+    font-family: 'poppins';
 }
 
 .img-card {
@@ -246,12 +239,8 @@ main {
     width: 100%;
     padding: 10px;
     font-weight: 100;
-    font-size: 0.7rem;
+    font-size: 1rem;
 
-}
-
-.titulo-roupa h3 {
-    font-size: 1.4rem;
 }
 
 .tags {
@@ -260,28 +249,20 @@ main {
     width: 100%;
 }
 
-
 .tag {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 30px;
+    width: 100px;
+    height: 20px;
     border-radius: 20px;
     color: #fff;
     font-size: 10px;
 }
 
-.tag span{
-    font-size: 16px;
-    font-weight: 400;
-}
-
-
 .tamanho p {
     color: #1C3C3A;
     font-weight: 550;
-
 }
 
 .preco span {
@@ -304,179 +285,59 @@ main {
 }
 
 .btn-garimpar {
-    height: 80px;
-    width: 250px;
+    height: 50px;
+    width: 170px;
     color: #FFB800;
     background-color: #1C3C3A;
     font-size: 1.5rem;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: 'prompt';
     font-weight: 600;
-    margin: 60px 0px;
-    cursor: pointer;
-    transition: 0.2s all;
 }
 
-.btn-garimpar:hover{
-    background-color: #2f5a57;
-}
-
-.btn-garimpar img {
-    height: 40px;
-}
-
-.brechos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.brechos{
     width: 100%;
+    margin-top: 20px;
     height: 700px;
+    background-color: red;
 }
 
-.header-section {
+.header-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     width: 100%;
     height: 20%;
     background-color: #1C3C3A;
     font-family: "bebas neue";
 }
 
-.local{
-    font-size: 4rem;
-}
-
-
 .header-section img{
- height: 200px;
-
+    height: 50px;
 }
 
 
-.titulo-section {
+.titulo-section{
     color: #FFB800;
     font-family: "bebas neue";
 }
 
-.icon-carrossel{
-    padding: 30px;
-    background-color: #FFB800;
-    border-radius: 100%;
-}
-
-.container-carrossel {
-    width: 1400px;
-    height: 80%;
-}
-
-.container-card-destaque{
+.container-carrossel{
     width: 100%;
+    height: 80%;
+    background-color: blue;
+}
+
+.carrossel-roupas{
+    width: 100%;
+    margin-top: 20px;
+    height: 700px;
     background-color: red;
-
 }
 
-.carousel-item{
-position: relative;
-z-index: 1;
-}
 
-.teste {
-    position: relative;
+.teste{
     height: 100%;
     background-color: red;
-    height: 560px;
-    object-fit: cover;
-
 }
 
-.selo-beneficiente{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background-color: #FFB800;
-    border-radius: 100%;
-    position: absolute;
-    right: -40px;
-    top: -60px;
-    transition: 0.2s all;
-    cursor: pointer;
-
-}
-
-.selo-detalhes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:440px;
-    border-radius: 100px;
-    padding: 40px;
-    
-  
-}
-
-.detalhes{
-    font-size: 0px;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.2s all;
-}
-
-.texto-visivel{
- font-size: 18px;
-}
-
-.btn-local{
- position: absolute;
- display: flex;
- justify-content: center;
- align-items: center;
-    top: 20px; /* Posição desejada no eixo Y */
-    left: 20px; /* Posição desejada no eixo X */
-    width: 900px; /* Largura desejada */
-    height: 100px; /* Altura desejada */
-    background-color: #FFB800;
-    z-index: 999; /* Certifique-se de que esteja acima da imagem */
-    border-radius: 30px;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem; 
-    font-weight: 700;
-}
-
-.btn-visitar{
-    position: absolute;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    top: 20px; /* Posição desejada no eixo Y */
-    left: 20px; /* Posição desejada no eixo X */
-    width: 300px; /* Largura desejada */
-    height: 100px; /* Altura desejada */
-    background-color: #FFB800;
-    z-index: 999; /* Certifique-se de que esteja acima da imagem */
-    border-radius: 80px;
-    top: 10%;
-    left: 88%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem; 
-    font-weight: 700;
-    transition: 0.2s all;
-    cursor: pointer;
-}
-
-.btn-visitar:hover{
-    background-color: #bb8600;
-    cursor: pointer;
-
-}
-
-.btn-visitar img{
-    height: 60px;
-}
