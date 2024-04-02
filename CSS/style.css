@@ -21,6 +21,16 @@
     --tag-opium: #78005E;
     --tag-personalizado: #FF7A00;
     --tag-grunge: #A60404;
+    --tag-witch: #5A7656;
+    --tag-vintage: #553607;
+    --tag-anime: #EEA7D1;
+    --tag-ousada: #7F4999;
+    --tag-inverno: #2ca7cc;
+    --tag-anos90: #C1E800;
+    --tag-divertido: #FF8139;
+    --tag-outon: #A24C4C;
+    --tag-time: #4B59D8;
+    --tag-basquete: #FFB800;
     --card: #FFECA4;
 
 }
@@ -75,6 +85,45 @@ body {
 
 .grunge {
     background-color: var(--tag-grunge);
+}
+
+.vintage {
+    background-color: var(--tag-vintage);
+}
+
+.witch {
+    background-color: var(--tag-witch);
+}
+
+.anime {
+    background-color: var(--tag-anime);
+}
+
+.ousada {
+    background-color: var(--tag-ousada);
+}
+
+.inverno {
+    background-color: var(--tag-inverno);
+}
+
+.anos90 {
+    background-color: var(--tag-anos90);
+}
+.outon {
+    background-color: var(--tag-outon);
+}
+
+.divertido {
+    background-color: var(--tag-divertido);
+}
+
+.time {
+    background-color: var(--tag-time);
+}
+
+.basquete {
+    background-color: var(--tag-basquete);
 }
 
 .cabecalho {
@@ -155,7 +204,7 @@ li {
 }
 
 li:hover {
-    background-color: rgba(232, 166, 0, 0.501)
+    background-color: rgb(220, 158, 0)
 }
 
 li a {
@@ -193,7 +242,6 @@ main {
 .titulo {
     text-align: center;
     font-family: 'Bebas Neue';
-
 }
 
 .container-card {
@@ -204,13 +252,13 @@ main {
     width: 100%;
     height: auto;
     /* background-color: purple; */
-    margin-top: 70px;
+    margin-top: 30px;
 
 }
 
 .card-roupa {
     position: relative;
-    height: 550px;
+    height: 580px;
     width: 350px;
     background-color: var(--card);
     border-radius: 10px;
@@ -245,12 +293,13 @@ main {
 .titulo-roupa {
     width: 100%;
     padding: 10px;
-    font-weight: 100;
     font-size: 0.7rem;
 
 }
 
 .titulo-roupa h3 {
+
+    font-weight: 500;
     font-size: 1.4rem;
 }
 
@@ -281,14 +330,13 @@ main {
 .tamanho p {
     color: #1C3C3A;
     font-weight: 550;
-
 }
 
 .preco span {
     color: #A60404;
-    font-weight: 700;
-    font-size: 2rem;
-
+    font-weight: 650;
+    font-size: 2.3rem;
+    font-family: 'Poppins';
 }
 
 .card-icons {
@@ -299,8 +347,7 @@ main {
 }
 
 .card-icons img {
-    height: 20px;
-
+    height: 30px;
 }
 
 .btn-garimpar {
@@ -396,27 +443,28 @@ z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: #FFB800;
     border-radius: 100%;
     position: absolute;
-    right: -40px;
-    top: -60px;
+    right: -10px;
+    top: -20px;
     transition: 0.2s all;
     cursor: pointer;
+}
 
+.selo-beneficiente img{
+    height: 50px;
 }
 
 .selo-detalhes{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:440px;
+    width:380px;
     border-radius: 100px;
     padding: 40px;
-    
-  
 }
 
 .detalhes{
@@ -427,7 +475,8 @@ z-index: 1;
 }
 
 .texto-visivel{
- font-size: 18px;
+ font-size: 15px;
+ margin-top: 10px;
 }
 
 .btn-local{
@@ -437,15 +486,16 @@ z-index: 1;
  align-items: center;
     top: 20px; /* Posição desejada no eixo Y */
     left: 20px; /* Posição desejada no eixo X */
-    width: 900px; /* Largura desejada */
-    height: 100px; /* Altura desejada */
-    background-color: #FFB800;
+    width: 800px; /* Largura desejada */
+    height: 90px; /* Altura desejada */
+    background-color: #ffb700ad;
+    color: var(--cor-titulo);
     z-index: 999; /* Certifique-se de que esteja acima da imagem */
     border-radius: 30px;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem; 
+    font-size: 3rem; 
     font-weight: 700;
 }
 
@@ -479,4 +529,22 @@ z-index: 1;
 
 .btn-visitar img{
     height: 60px;
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+.marcas img{
+    height: 70px;
+
+    /* background-color: #FFB800; */
+}
+
+.icons-marcas img{
+height: 200px;
 }
