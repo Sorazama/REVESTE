@@ -310,9 +310,8 @@ main {
 
 .titulo-roupa {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     font-size: 0.7rem;
-
 }
 
 .titulo-roupa h3 {
@@ -355,6 +354,7 @@ main {
     font-weight: 650;
     font-size: 2.3rem;
     font-family: 'Poppins';
+    padding: 0px;
 }
 
 .card-icons {
@@ -409,7 +409,6 @@ main {
     font-family: "bebas neue";
     z-index: 1;
 }
-
 
 .local {
     font-size: 4rem;
@@ -585,6 +584,17 @@ main {
     height: 60px;
 }
 
+/* destaques */
+
+.destaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+   
+}
+
 .marcas {
     display: flex;
     justify-content: center;
@@ -628,11 +638,3 @@ main {
     height: 600px;
 }
 
-.destaque{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-   
-}
