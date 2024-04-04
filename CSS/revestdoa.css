@@ -7,171 +7,185 @@
 
                                 /*CSS Reset*/
 
-                                * {
-                                    margin: 0;
-                                    padding: 0;
-                                    box-sizing: border-box;
-                                    text-decoration: none;
-                                    border: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
                                 
-                                }
+}
                                 
-                                :root {
-                                    --cor-titulo: #390000;
-                                    --tag-goth: #7F4999;
-                                    --tag-large: #4CA29D;
-                                    --tag-punk: #24FF00; /* Variável da cor do filtro */
-                                    --tag-y2k: #00D1FF;
-                                    --tag-lacoste: #1C6137;
-                                    --tag-opium: #78005E;
-                                    --tag-personalizado: #FF7A00;
-                                    --tag-grunge: #A60404;
-                                    --card: #FFECA4;
+:root {
+    --cor-titulo: #390000;
+    --tag-goth: #7F4999;
+    --tag-large: #4CA29D;
+    --tag-punk: #24FF00; /* Variável da cor do filtro */
+    --tag-y2k: #00D1FF;
+    --tag-lacoste: #1C6137;
+    --tag-opium: #78005E;
+    --tag-personalizado: #FF7A00;
+    --tag-grunge: #A60404;
+    --card: #FFECA4;
                                 
-                                }
+}
                                 
-                                body {
-                                    background-color: #f8f1d7;
-                                }
+body {
+    background-color: #f8f1d7;
+}
                                 
                                 
-                                .titulo-1 {
-                                    font-size: 5rem;
-                                    color: var(--cor-titulo);
-                                    font-weight: 500;
+.titulo-1 {
+    font-size: 5rem;
+    color: var(--cor-titulo);
+    font-weight: 500;
                                 
-                                }
+}
                                 
-                                .titulo-2 {
-                                    font-size: 3rem;
-                                    font-weight: 100;
-                                    color: var(--cor-titulo);
+.titulo-2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--cor-titulo);
                                 
-                                }
+}
                                 
-                                .goth {
-                                    background-color: var(--tag-goth);
-                                }
+.goth {
+    background-color: var(--tag-goth);
+}
                                 
-                                .large {
-                                    background-color: var(--tag-large);
-                                }
+.large {
+    background-color: var(--tag-large);
+}
                                 
-                                .punk {
-                                    background-color: var(--tag-punk);
-                                }
+.punk {
+    background-color: var(--tag-punk);
+}
                                 
-                                .y2k {
-                                    background-color: var(--tag-y2k);
-                                }
+.y2k {
+    background-color: var(--tag-y2k);
+}
                                 
-                                .lacoste {
-                                    background-color: var(--tag-lacoste);
-                                }
+.lacoste {
+    background-color: var(--tag-lacoste);
+}
                                 
-                                .opium {
-                                    background-color: var(--tag-opium);
-                                }
+.opium {
+    background-color: var(--tag-opium);
+}
                                 
-                                .personalizado {
-                                    background-color: var(--tag-personalizado);
-                                }
+.personalizado {
+    background-color: var(--tag-personalizado);
+}
                                 
-                                .grunge {
-                                    background-color: var(--tag-grunge);
-                                }
+.grunge {
+    background-color: var(--tag-grunge);
+}
                                 
-                                .cabecalho {
-                                    height: 120px;
-                                    width: 100%;
-                                }
+.cabecalho {
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    z-index: 999;
+}
                                 
-                                .cabecalho-superior {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    height: 60%;
-                                    padding: 20px;
-                                    background-color: #1C3C3A;
-                                }
+.cabecalho-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    padding: 20px;
+    background-color: #1C3C3A;
+}
                                 
-                                .cabecalho-inferior {
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 40%;
-                                    background-color: #FFB800;
-                                }
+.cabecalho-inferior {
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    background-color: #FFB800;
+}
                                 
-                                .logo img {
-                                    height: 80px;
-                                }
+.cabecalho-inferior.rolagem-nav{
+                                    
+    height: 45%;
+    height: 0;   
+    transition: width 1s, height 1s, opacity 1s;
+}
                                 
-                                .container-search {
-                                    position: relative;
-                                }
+.logo img {
+    height: 80px;
+}
                                 
-                                .search {
-                                    padding: 10px;
-                                    height: 40px;
-                                    width: 500px;
-                                    border-radius: 5px;
-                                    outline: none;
-                                    font-size: 15px;
-                                    background-color: #FFECA4;
-                                }
+.container-search {
+    position: relative;
+}
                                 
-                                .lupa {
-                                    position: absolute;
-                                    background-color: transparent;
-                                    right: 10px;
-                                    top: 5px;
+.search {
+    padding: 10px;
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    background-color: #FFECA4;
+}
                                 
-                                }
+.lupa {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    top: 5px;
                                 
-                                .lupa img {
-                                    height: 25px;
-                                }
+}
                                 
-                                .icones {
-                                    display: flex;
-                                    gap: 20px;
-                                    font-size: 25px;
-                                }
+.lupa img {
+    height: 25px;
+}
                                 
-                                .cabecalho-inferior ul {
-                                    display: flex;
-                                    width: 100%;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    height: 100%;
-                                }
+.icones {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
                                 
-                                li {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    list-style: none;
-                                    gap: 15px;
-                                    width: 20%;
-                                    height: 100%;
-                                    transition: 0.3s all;
-                                    cursor: pointer;
-                                }
+.cabecalho-inferior ul {
+                                    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
                                 
-                                li:hover {
-                                    background-color: rgba(232, 166, 0, 0.501)
-                                }
+#nav-link.nav-list{
+    display: none;
+}
                                 
-                                li a {
-                                    text-decoration: none;
-                                    font-weight: 700;
-                                    color: #fff;
-                                    font-size: 12px;
-                                }
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    width: 20%;
+    height: 100%;
+    transition: 0.3s all;
+    cursor: pointer;
+}
                                 
-                                .nav-icon {
-                                    height: 30px;
-                                }
+li:hover {
+    background-color: rgb(220, 158, 0)
+}
+                                
+li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+}
+                                
+.nav-icon {
+    height: 30px;
+}
                                 
                         /*Conteudo Principal*/
 
@@ -200,7 +214,7 @@ main{
 }
 
 #instituicao-1{
-    margin-top: 0px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
 }
