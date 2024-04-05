@@ -30,9 +30,9 @@
                                 
 }
                                 
-                                body {
-                                    background-color: #f8f1d7 !important;
-                                }
+body {
+    background-color: #f8f1d7;
+}
                                 
                                 
 .titulo-1 {
@@ -97,12 +97,19 @@
     background-color: #1C3C3A;
 }
                                 
-                                .cabecalho-inferior {
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 40%;
-                                    background-color: #FFB800;
-                                }
+.cabecalho-inferior {
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    background-color: #FFB800;
+}
+                                
+.cabecalho-inferior.rolagem-nav{
+                                    
+    height: 45%;
+    height: 0;   
+    transition: width 1s, height 1s, opacity 1s;
+}
                                 
 .logo img {
     height: 80px;
@@ -119,7 +126,7 @@
     border-radius: 5px;
     outline: none;
     font-size: 15px;
-    background-color: #FFECA4 ;
+    background-color: #FFECA4;
 }
                                 
 .lupa {
@@ -186,7 +193,7 @@ main{
     position: relative;
     width: 100%;
     height: 1200px; 
-    /*  background-image: url(../Imagens/Rectangle\ 56.svg); */
+    background-image: url(../Imagens/Rectangle\ 56.svg);
     background-repeat: no-repeat;
     background-size: cover;  
     padding-top: 80px;  
