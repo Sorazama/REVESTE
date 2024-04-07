@@ -234,12 +234,12 @@ main{
 
 .card-roupa {
     position: relative;
-    margin-bottom: 30px;
-    height: 550px;
+    height: 580px;
     width: 350px;
     background-color: var(--card);
     border-radius: 10px;
     font-family: 'prompt';
+    box-shadow: -9px 13px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 #container-card-1{
@@ -288,7 +288,7 @@ main{
 
 .card-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     text-align: center;
     height: 40%;
@@ -298,7 +298,6 @@ main{
 
 .titulo-roupa {
     width: 100%;
-    padding: 10px;
     font-weight: 100;
     font-size: 0.7rem;
 
@@ -681,3 +680,4 @@ footer{
 #img-1{
     margin-left: 110px;
 }
+
