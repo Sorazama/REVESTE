@@ -169,12 +169,17 @@ body.dark h2#titulo-2 {
     background-color: #1C3C3A;
 }
 
+#menu{
+    display: none;
+}
+
 .cabecalho-inferior {
     display: flex;
     justify-content: center;
     height: 40%;
     background-color: #FFB800;
 }
+
 
 .cabecalho-inferior.rolagem-nav {
 
@@ -213,7 +218,7 @@ body.dark h2#titulo-2 {
     height: 25px;
 }
 
-.icones {
+.icones, .icons {
     display: flex;
     gap: 20px;
     font-size: 25px;
@@ -341,12 +346,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1200px;
+    gap: 50px;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 70px;
+}
+
+.container-card-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
     flex-wrap: wrap;
     width: 100%;
     padding: 30px;
-
-
 }
 
 .card-roupa {
@@ -357,8 +371,8 @@ main {
     border-radius: 10px;
     font-family: 'prompt';
     box-shadow: -9px 13px 15px -3px rgba(0, 0, 0, 0.1);
+    list-style: none;
 }
-
 .img-card {
     height: 60%;
     width: 100%;
@@ -636,7 +650,7 @@ main {
     width: 250px;
     height: 70px;
     background-color: #FFB800;
-    z-index: 999;
+    z-index: 2;
     border-radius: 20px;
     top: 10%;
     left: 88%;
@@ -667,6 +681,8 @@ main {
 }
 
 /* destaques */
+
+
 
 .marcas {
     display: flex;
@@ -1079,4 +1095,62 @@ footer{
 
 #img-1{
     margin-left: 110px;
+}
+
+@media screen and (max-width:1209px) {
+    .cabecalho-superior{
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50px;
+
+    }
+
+    .logo img{
+        height: 50px;
+    }
+    .cabecalho-inferior{
+        display: none;
+        color: #ffb800;
+    }
+
+    .search{
+        width: 230px;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+
+
+    .outono{
+        width: 100%;
+    }
+
+    .container-carrossel{
+        display: none;
+    }
+
+    .quem-somos, .revest-doa{
+       display: none;
+    }
+
+    .header-section{
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+    }
+
+    .header-section img{
+        display: none;
+    }
 }
