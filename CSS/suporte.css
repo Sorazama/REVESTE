@@ -1,109 +1,10 @@
-                            /*Fonte Poppins*/
-                            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-                            /*Fonte Poppins Bold*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-                            /*Font Bebas Neue*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                                /*CSS Reset*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-                                
-}
-                                
-:root {
-    --cor-titulo: #390000;
-    --tag-goth: #7F4999;
-    --tag-large: #4CA29D;
-    --tag-punk: #24FF00; /* Variável da cor do filtro */
-    --tag-y2k: #00D1FF;
-    --tag-lacoste: #1C6137;
-    --tag-opium: #78005E;
-    --tag-personalizado: #FF7A00;
-    --tag-grunge: #A60404;
-    --card: #FFECA4;
-                                
-}
-                                
-body {
-    background-color: #f8f1d7;
-    transition: background 0.2s linear;
-}
-
-body.dark {
-    background-color: #201f1f !important;
-}
-
-body.dark h1#outono-chegou,
-body.dark h2#outono-chegou,
-body.dark h1#h1-tamanhos,
-body.dark h1#h1-precos,
-body.dark h1#h1-tags,
-body.dark h1#revestindo,
-body.dark h1#titulo-quem-somos {
-    color: #BA6735;
-    /* Cor para o modo escuro */
-}
-                                
-                                
-.titulo-1 {
-    font-size: 5rem;
-    color: var(--cor-titulo);
-    font-weight: 500;
-                                
-}
-                                
-.titulo-2 {
-    font-size: 3rem;
-    font-weight: 100;
-    color: var(--cor-titulo);
-                                
-}
-                                
-.goth {
-    background-color: var(--tag-goth);
-}
-                                
-.large {
-    background-color: var(--tag-large);
-}
-                                
-.punk {
-    background-color: var(--tag-punk);
-}
-                                
-.y2k {
-    background-color: var(--tag-y2k);
-}
-                                
-.lacoste {
-    background-color: var(--tag-lacoste);
-}
-                                
-.opium {
-    background-color: var(--tag-opium);
-}
-                                
-.personalizado {
-    background-color: var(--tag-personalizado);
-}
-                                
-.grunge {
-    background-color: var(--tag-grunge);
-}
-                                
 .cabecalho {
     position: fixed;
     height: 120px;
     width: 100%;
     z-index: 999;
 }
-                                
+
 .cabecalho-superior {
     display: flex;
     justify-content: space-between;
@@ -112,29 +13,29 @@ body.dark h1#titulo-quem-somos {
     padding: 20px;
     background-color: #1C3C3A;
 }
-                                
+
 .cabecalho-inferior {
     display: flex;
     justify-content: center;
     height: 40%;
     background-color: #FFB800;
 }
-                                
+
 .cabecalho-inferior.rolagem-nav{
-                                    
+    
     height: 45%;
     height: 0;   
     transition: width 1s, height 1s, opacity 1s;
 }
-                                
+
 .logo img {
     height: 80px;
 }
-                                
+
 .container-search {
     position: relative;
 }
-                                
+
 .search {
     padding: 10px;
     height: 40px;
@@ -144,31 +45,32 @@ body.dark h1#titulo-quem-somos {
     font-size: 15px;
     background-color: #FFECA4;
 }
-                                
+
 .lupa {
     position: absolute;
     background-color: transparent;
     right: 10px;
     top: 5px;
-                                
+
 }
-                                
+
 .lupa img {
     height: 25px;
 }
-                                
+
 .icones {
     display: flex;
     gap: 20px;
     font-size: 25px;
+    
 }
 
-#temas {
+#temas{
     gap: 0px;
     font-size: 18px;
     margin-right: 5px;
 }
-
+                                     /*Menu da sacola*/
 .sacola {
     width: 400px;
     height: 310px;
@@ -322,20 +224,20 @@ body.dark h1#titulo-quem-somos {
     background-color: transparent;
     border: 2px solid #FFB800;
 }
-                                
+
 .cabecalho-inferior ul {
-                                    
+    
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
-                                
+
 #nav-link.nav-list{
     display: none;
 }
-                                
+
 li {
     display: flex;
     justify-content: center;
@@ -347,18 +249,18 @@ li {
     transition: 0.3s all;
     cursor: pointer;
 }
-                                
+
 li:hover {
     background-color: rgb(220, 158, 0)
 }
-                                
+
 li a {
     text-decoration: none;
     font-weight: 700;
     color: #fff;
     font-size: 12px;
 }
-                                
+
 .nav-icon {
     height: 30px;
 }
@@ -366,11 +268,11 @@ li a {
 .checkbox {
     opacity: 0;
     position: absolute;
-
+    
 }
 
 .label{
-
+    
     background-color: #111;
     border-radius: 50px;
     cursor: pointer;
@@ -408,80 +310,160 @@ li a {
     color: #f39c12;
 }
 
-                                
-                        /*Conteudo Principal*/
-
-main{
-    position: relative;
-    width: 100%;
-    height: 1200px; 
-    background-image: url(../Imagens/Rectangle\ 56.svg);
-    background-repeat: no-repeat;
-    background-size: cover;  
-    padding-top: 80px;  
+.titulo {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    margin-top: 80px;
 }
 
-.container-instituicao{
-    width: 80%;
+.titulo-1 {
+    font-size: 6rem;
+    color: var(--cor-titulo); 
+    font-weight: 600;
+
+}
+
+.titulo-2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--cor-titulo);
+
+}
+
+.container-pesquisa {
+    position: relative;
+}
+
+.pesquisa {
+    padding: 10px;
+    height: 60px;
+    width: 800px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 15px;
+    background-color: #FFECA4;
+}
+
+.lupa {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    top: 5px;
+
+}
+
+.lupa img {
+    height: 25px; 
+}
+
+.lupaa {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    top: 15px;
+
+}
+.lupaa img {
+    height: 25px; 
+}
+
+.container-suporte{
+    width: 100%;
     height: 300px;
-    background-color: #ffeca4;
-    border-radius: 15px;
-    margin-left: 125px;
-    padding-top: 25px;
-    padding-left: 35px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-    
-}
-
-#instituicao-1{
-    margin-top: 60px;
     display: flex;
     flex-direction: row;
 }
 
-.container-imagem-instituicao{
-    position: relative;
-    width: 450px;
-    height: 250px;
-    border-radius: 15px;
-}
-
-.imagem-instituicao{
-    width: 100%;
-    height: 100%;
-}
-
-.container-texto-instituicao{
-    position: relative;
-    width: 660px;
-    height: 250px;
+.card-suporte{
+    width: 270px;
+    height: 300px;
+    background-color: #FFECA4;
+    border-radius: 10px;
     margin-left: 15px;
     display: flex;
     flex-direction: column;
 }
 
-.titulo-instituicao{
-    font-family: 'Bebas Neue';
+#card-suporte-1{
+    margin-left: 345px;
 }
 
-.texto-instituicao{
-    font-family: 'poppins';
+#titulo-suporte{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 500px;
+    margin-top: 25px;
+}
+
+.imagem-suporte{
+    width: 100%;
+    height: 160px;
+}
+
+.imagem-suporte img{
+    width: 150px;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 3px;
+}
+
+.texto-suporte{
+    font-size: 20px;
+    text-align: center;
+}
+
+.paragrafo-suporte{
+    text-align: center;
+}
+
+#titulo-suporte-1{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 500px;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+#card-suporte-2{
+    width: 850px;
+    height: 200px;
+    background-color:#FFECA4;
+    border-radius: 10px;
+    margin-left: 345px;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-suporte-2{
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-suporte-2 img{
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+#texto-suporte-final{
+    width: 600px;
+    height: 150px;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+
+#titulo-final{
+    font-size: 25px;
+}
+
+#texto-final{
     font-size: 18px;
 }
 
-#imagem-ccaf{
-    width: 390px;
-    height: 250px;
-}
-
-#imagem-casahope{
-    width: 420px;
-    height: 250px;
-}
-
-                                            /*Rodapé*/
+                                        /*Rodape*/
 
 footer{
     position: relative;
@@ -490,23 +472,24 @@ footer{
     background-color: #1c3c3a;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
-
+                                        
 .conteudo-footer{
-    position: relative;
+    position: refoolative;
     width: 100%;
     height: 360px;
     display: flex;
     flex-direction: row;
 }
-
+                                        
 .copyright-footer{
     position: relative;
     width: 100%;
     height: 60px;
     text-align: center;
 }
-
+                                        
 .central-atendimento{
     position: relative;
     width: 35%;
@@ -514,13 +497,13 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
+                                        
 .container-integrantes{
     position: relative;
     width: 35%;
     height: 100%;
 }
-
+                                        
 .redes-sociais{
     position: relative;
     width: 30%;
@@ -528,7 +511,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
+                                        
 #container-titulo-atendimento{
     position: relative;
     font-family: 'poppins';
@@ -536,17 +519,17 @@ footer{
     height: 60px;
     padding-top: 20px;
     text-align: center;
-    
+                                            
 }
-
+                                        
 .titulo-footer{
     margin-top: 10px;
     font-size: 21px;
     font-weight: 550;
     color: #ffb800;
 }
-
-
+                                        
+                                        
 .conteudo-atendimento{
     position: relative;
     width: 100%;
@@ -555,7 +538,7 @@ footer{
     flex-direction: row;   
     margin-top: 5px;
 }
-
+                                        
 .imagem-atendimento{
     width: 50px;
     height: 40px;
@@ -564,29 +547,29 @@ footer{
     margin-top: 15px;
     margin-left: 105px;
 }
-
+                                        
 #imagem-atendimento-1{
     margin-top: 0;
 }
-
+                                        
 .texto-footer{
     color: #f8f1d7;
     font-family: 'poppins';
     padding-top: 7px;
     font-size: 17px;
 }
-
+                                        
 #numero-footer{
-    padding-top: 23px;
+padding-top: 23px;
 }
-
+                                        
 .integrantes{
     width: 100%;
     height: 100%;
     text-align: center;
     padding-top: 20px;
 }
-
+                                        
 .texto-integrantes{
     color: #f8f1d7;
     font-family: 'poppins';
@@ -596,33 +579,33 @@ footer{
     font-size: 18px;
     padding-top: 7px;
 }
-
+                                        
 #imagem-copyright{
     width: 25px;
     height: 25px;
 }
-
+                                        
 #container-titulo-redes{
     text-align: center;
     padding-top: 17px;
 }
-
+                                        
 #titulo-redes-sociais{
     font-size: 23px;
 }
-
+                                        
 .imagens-redes{
     width: 100%;
     height: 80px;
 }
-
+                                        
 .imagem-redes{
     margin-left: 5px;
     width: 50px;
     height: 50px;
     margin-top: 10px;
 }
-
+                                        
 #img-1{
     margin-left: 110px;
 }

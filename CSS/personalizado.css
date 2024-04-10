@@ -101,6 +101,166 @@
     gap: 20px;
     font-size: 25px;
 }
+
+#temas {
+    gap: 0px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.sacola {
+    width: 400px;
+    height: 310px;
+    background-color: #285552; /*#999483;*/
+    position: absolute;
+    right: 5px;
+    margin-top: 40px;
+    visibility: hidden;
+    transition: visibility 0.5s linear; 
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+}
+
+#sacola{
+    transition: opacity 0.5s ease;
+}
+
+.container-texto-sacola{
+    margin-left: 40px;
+    width: 80%;
+}
+
+#triangulo-sacola{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 52px;
+    bottom: 254px;
+}
+
+.titulo-sacola{
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFB800;
+    color: #FFB800;
+}
+
+.container-sacola {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #FFB800;
+    padding-bottom: 7px;
+    margin-left: 20px;
+}
+
+.imagem-sacola {
+    width: 150px;
+    height: 100%;
+    margin-left: 0px;
+}
+
+.imagem-sacola img {
+    width: 100%;
+    height: 100%;
+}
+
+.texto-sacola {
+    width: 200px;
+    height: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    color: #FFB800;
+}
+
+.final-sacola{
+    width: 100%;
+    height: 100%;
+    padding-left: 120px;
+    padding-top: 10px;
+    color:#FFB800 ;
+}
+
+.btn-sacola {
+    height: 40px;
+    width: 180px;
+    color: #FFB800;
+    background-color: #252525;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'prompt';
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 80px;
+    padding-top: 5px;
+}
+
+.perfil{
+    width: 300px;
+    height: 310px;
+    background-color: #285552; /*#999483;*/
+    position: absolute;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-family: 'poppins';
+    right: 10px;
+    margin-top: 40px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#triangulo-perfil{
+    position: absolute;
+    margin-left: 271px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 52px;
+    bottom: 254px;
+}
+
+.container-texto-perfil{
+    width: 90%;
+    height: 80px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 15px;
+    color:#FFB800 ;
+}
+
+.container-texto-perfil a {
+    color: #000;
+}
+
+.btn-perfil {
+    height: 50px;
+    width: 90%;
+    color: #FFB800;
+    background-color: #252525;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'prompt';
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 15px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+#btn-2{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid #FFB800;
+}
                                 
 .cabecalho-inferior ul {
     display: flex;
@@ -547,147 +707,149 @@ z-index: 1;
 
                                             /*Rodapé*/
 
-footer{
-    position: relative;
-    width: 100%;
-    height: 420px;
-    background-color: #1c3c3a;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.conteudo-footer{
-    position: refoolative;
-    width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: row;
-}
-
-.copyright-footer{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-}
-
-.central-atendimento{
-    position: relative;
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-integrantes{
-    position: relative;
-    width: 35%;
-    height: 100%;
-}
-
-.redes-sociais{
-    position: relative;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-#container-titulo-atendimento{
-    position: relative;
-    font-family: 'poppins';
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    text-align: center;
-    
-}
-
-.titulo-footer{
-    margin-top: 10px;
-    font-size: 21px;
-    font-weight: 550;
-    color: #ffb800;
-}
-
-
-.conteudo-atendimento{
-    position: relative;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;   
-    margin-top: 5px;
-}
-
-.imagem-atendimento{
-    width: 50px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    margin-top: 15px;
-    margin-left: 105px;
-}
-
-#imagem-atendimento-1{
-    margin-top: 0;
-}
-
-.texto-footer{
-    color: #f8f1d7;
-    font-family: 'poppins';
-    padding-top: 7px;
-    font-size: 17px;
-}
-
-#numero-footer{
-    padding-top: 23px;
-}
-
-.integrantes{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.texto-integrantes{
-    color: #f8f1d7;
-    font-family: 'poppins';
-    width: 150px;
-    margin-left: 185px;
-    margin-bottom: 3px;
-    font-size: 18px;
-    padding-top: 7px;
-}
-
-#imagem-copyright{
-    width: 25px;
-    height: 25px;
-}
-
-#container-titulo-redes{
-    text-align: center;
-    padding-top: 17px;
-}
-
-#titulo-redes-sociais{
-    font-size: 23px;
-}
-
-.imagens-redes{
-    width: 100%;
-    height: 80px;
-}
-
-.imagem-redes{
-    margin-left: 5px;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
-
-#img-1{
-    margin-left: 110px;
-}
+                                            footer{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 420px;
+                                                background-color: #1c3c3a;
+                                                display: flex;
+                                                flex-direction: column;
+                                                margin-top: 20px;
+                                            }
+                                            
+                                            .conteudo-footer{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 360px;
+                                                display: flex;
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .copyright-footer{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 60px;
+                                                text-align: center;
+                                            }
+                                            
+                                            .central-atendimento{
+                                                position: relative;
+                                                width: 35%;
+                                                height: 100%;
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .container-integrantes{
+                                                position: relative;
+                                                width: 35%;
+                                                height: 100%;
+                                            }
+                                            
+                                            .redes-sociais{
+                                                position: relative;
+                                                width: 30%;
+                                                height: 100%;
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            #container-titulo-atendimento{
+                                                position: relative;
+                                                font-family: 'poppins';
+                                                width: 100%;
+                                                height: 60px;
+                                                padding-top: 20px;
+                                                text-align: center;
+                                                
+                                            }
+                                            
+                                            .titulo-footer{
+                                                margin-top: 10px;
+                                                font-size: 21px;
+                                                font-weight: 550;
+                                                color: #ffb800;
+                                            }
+                                            
+                                            
+                                            .conteudo-atendimento{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 80px;
+                                                display: flex;
+                                                flex-direction: row;   
+                                                margin-top: 5px;
+                                                margin-left: 75px;
+                                            }
+                                            
+                                            .imagem-atendimento{
+                                                width: 50px;
+                                                height: 40px;
+                                                margin: 0;
+                                                padding: 0;
+                                                margin-top: 15px;
+                                                margin-left: 105px;
+                                            }
+                                            
+                                            #imagem-atendimento-1{
+                                                margin-top: 0;
+                                            }
+                                            
+                                            .texto-footer{
+                                                color: #f8f1d7;
+                                                font-family: 'poppins';
+                                                padding-top: 7px;
+                                                font-size: 17px;
+                                            }
+                                            
+                                            #numero-footer{
+                                                padding-top: 23px;
+                                            }
+                                            
+                                            .integrantes{
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .texto-integrantes{
+                                                color: #f8f1d7;
+                                                font-family: 'poppins';
+                                                width: 150px;
+                                                margin-left: 255px;
+                                                margin-bottom: 3px;
+                                                font-size: 18px;
+                                                padding-top: 7px;  /* pendente alinhar com flex-wrap */
+                                            }
+                                            
+                                            #imagem-copyright{
+                                                width: 25px;
+                                                height: 25px;
+                                            }
+                                            
+                                            #container-titulo-redes{
+                                                text-align: center;
+                                                padding-top: 17px;
+                                            }
+                                            
+                                            #titulo-redes-sociais{
+                                                font-size: 23px;
+                                            }
+                                            
+                                            .imagens-redes{
+                                                width: 100%;
+                                                height: 80px;
+                                                margin-left: 60px;
+                                            }
+                                            
+                                            .imagem-redes{
+                                                margin-left: 10px;
+                                                width: 50px;
+                                                height: 50px;
+                                                margin-top: 10px;
+                                            }
+                                            
+                                            #img-1{
+                                                margin-left: 110px;
+                                            }

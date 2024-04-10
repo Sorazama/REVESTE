@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual</title>
+    <link rel="stylesheet" href="CSS/casual.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-superior">
+            <div class="logo">
+                <img src="Imagens/logo rec 1.svg" alt="">
+            </div>
+
+            <form action="#" class="container-search">
+                <input type="text" class="search" placeholder="Olá, o que você procura?">
+                <button class="lupa"><img src="Imagens/Search.svg" alt=""></button>
+            </form>
+
+
+
+
+            <div class="icones">
+
+                <div id="temas">
+                    <input type="checkbox" class="checkbox" id="chk">
+    
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+
+                <i class="fa-solid fa-bag-shopping" onmouseover="mostra_sacola()" onmouseout="resetarTemporizador()" style="color: #ffb800;" ></i>
+
+                <div class="sacola" id="sacola" onmouseover="manterVisivel()" onmouseout="some_sacola()">
+                 
+                     <div class="container-texto-sacola">
+
+                        <img id="triangulo-sacola" src="Imagens/triangulo.png" alt="" />
+
+                         <h2 class="titulo-sacola">minha sacola</h1>
+
+                     </div>
+                     
+
+                    <div class="container-sacola">
+
+                        <div class="imagem-sacola">
+                            <img src="Imagens/jaqueta flanelada.png" alt="">
+                        </div>
+
+                        <div class="texto-sacola">
+                            <h6>Jaqueta Classic</h1>
+                            <h6>Quantidade: 1 R$89,90</h6>
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="final-sacola">
+                            <h6>Total (valor sem frete): R$ 89,90</h6>
+                            <button class="btn-sacola">
+                                <h6>VER MINHA SACOLA</h6>
+                            </button>
+                
+                    </div>
+
+                </div>
+
+                <i class="fa-solid fa-headset" style="color: #ffb800;"></i>
+                
+                <i class="fa-solid fa-user" onmouseover="mostra_perfil()" onmouseout="resetarTemporizador()" style="color: #ffb800;"></i>
+
+                <div class="perfil" id="perfil" onmouseover="manterVisivel()" onmouseout="some_perfil()">
+                    <img id="triangulo-perfil" src="Imagens/triangulo.png" alt="" />
+
+                    <div class="container-texto-perfil">
+                        <h6>para ver seus pedidos e ter uma experiência personalizada, acesse sua conta :)</h6>
+                    </div>
+
+                    <button class="btn-perfil">
+                        <h6>ENTRAR</h6>
+                    </button>
+
+                    <button class="btn-perfil" id="btn-2">
+                        <h6>CADASTRAR-SE</h6>
+                    </button>
+
+                    <div class="container-texto-perfil">
+                        <h6>comprou nas lojas visicas ou no app da reveste? <a href="">Acompanhar pedido</a></h6>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <nav class="cabecalho-inferior">
+            <ul id="nav-link">
+                <li><a href=""><img src="Imagens/icon_casa.svg" class="nav-icon" alt=""><a href="">HOME</a></a></li>
+                <li><img src="Imagens/T-shirt on Hanger.svg" class="nav-icon" alt=""><a href="">CASUAL</a></li>
+                <li><img src="Imagens/Top Hat.svg" class="nav-icon" alt=""><a href="">FORMAL</a></li>
+                <li><img src="Imagens/Paint Palette.svg" class="nav-icon" alt=""><a href="">PERSONALIZADOS</a></li>
+                <li><img src="Imagens/Handmade.svg" class="nav-icon" alt=""><a href="">REVESTE&DOA</a></li>
+                <li><img src="Imagens/Gender Equality.svg" class="nav-icon" alt=""><a href="">SEM GÊNERO</a></li>
+        </nav>
+        </div>
+    </header>
+    <main>
+
+            <div class="container-card"> <!--Separador dos cards-->
+                <div class="card-roupa">
+
+                    <div class="selo-beneficiente">
+                        <p class="detalhes">Ajude pessoas em situação de vulnerabilidade social abrigadas na Casa
+                            Lázaro.</p> <!--alterar os textos entre "ajude pessoas", "pacientes em reabilitação"-->
+
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div> <!--Selo beneficiente-->
+
+
+                    <div class="img-card">
+                        <img src="Imagens/Blusa Feminina Térmica Grossa De Lã.webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Blusa Térmica Grossa De Lã</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag opium"><span>#Casual</span></div>
+                            <div class="tag casual"><span>#Inverno</span></div> <!--Alterar cor da tag-->
+                            <div class="tag personalizado"><span>#lã</span></div>
+                            
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam M</p> <!--trocar o tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 65,90</span> <!--alterar o preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+
+                  
+                    
+                    <div class="img-card">
+                        <img src="Imagens/conjunto de camiseta e short caqui.webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Conjunto De Camiseta e Short</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag y2k"><span>#Verão</span></div>
+                            <div class="tag opium"><span>#Casual</span></div> <!--Alterar cor da tag-->
+                            <div class="tag claro"><span>#Linho</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam G</p> <!--trocar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 45,00</span> <!--trocar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+                    <div class="selo-beneficiente"> <!--Para tirar ou colocar selo beneficiente-->
+                        <p class="detalhes">Pacientes em reabilitação
+                            psicossocial do Instituto
+                            de Psiquiatria</p>
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div>
+                    <div class="img-card"> <!--Trocar imagem da roupa-->
+                        <img src="Imagens/Mizuno Prophecy 6.jpg" alt="">
+                    </div>
+
+                    <div class="card-info">
+
+                        <div class="titulo-roupa">
+                            <h3>Tênis Mizuno Prophecy 6 Azul/Rosa</h3> <!--Alterar descrição da roupa-->
+                        </div>
+
+                        <div class="tags">
+                            <div class="tag punk"><span>#Corrida</span></div>
+                            
+                            <div class="tag opium"><span>#Casual</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam 41</p> <!--Alterar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 220,00</span> <!--Alterar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-card"> <!--Separador dos cards-->
+                <div class="card-roupa">
+                    <div class="img-card">
+                        <img src="Imagens/Calça Bag Jeans.webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Calça Balão Jeans</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag large"><span>#Jeans</span></div>
+                            <div class="tag opium"><span>#Casual</span></div> <!--trocar cor da tag-->
+                            <div class="tag jeans"><span>#Grande</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam G</p> <!--trocar o tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 34,99</span> <!--alterar o preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+
+                    <div class="selo-beneficiente">
+                        <p class="detalhes">Pacientes em reabilitação
+                            psicossocial do Instituto
+                            de Psiquiatria</p>
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div> <!--Selo beneficiente-->
+                    
+                    <div class="img-card">
+                        <img src="Imagens/Conjunto Feminino Fresco Veraneio, Verde.webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Conjunto Fresco Veraneio</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag opium"><span>#Casual</span></div>
+                            <div class="tag y2k"><span>#Verão</span></div> <!--trocar cor da tag-->
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam M</p> <!--trocar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 59,00</span> <!--trocar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+                    <div class="selo-beneficiente"> <!--Para tirar ou colocar selo beneficiente-->
+                        <p class="detalhes">Pacientes em reabilitação
+                            psicossocial do Instituto
+                            de Psiquiatria</p>
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div>
+                    <div class="img-card"> <!--Trocar imagem da roupa-->
+                        <img src="Imagens/Conjunto Infantil Lovers.webp" alt="">
+                    </div>
+
+                    <div class="card-info">
+
+                        <div class="titulo-roupa">
+                            <h3>Conjunto Infantil Lovers</h3> <!--Alterar descrição da roupa-->
+                        </div>
+
+                        <div class="tags">
+                            <div class="tag personalizado"><span>#Infantil</span></div> <!--Alterar cor da tag-->
+                            <div class="tag opium"><span>#Casual</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam P</p> <!--Alterar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 20,00</span> <!--Alterar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- copiar até aqui-->
+            <div class="container-card"> <!--Separador dos cards-->
+                <div class="card-roupa">
+
+                    <div class="selo-beneficiente">
+                        <p class="detalhes">Ajude pessoas em situação de vulnerabilidade social abrigadas na Casa
+                            Lázaro.</p>
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div> <!--Selo beneficiente-->
+
+
+                    <div class="img-card">
+                        <img src="Imagens/Calça Pantalona Fluida.webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Calça Pantalona Fluida</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag opium"><span>#Casual</span></div>
+                            <div class="tag black"><span>#Sarjado</span></div> <!--trocar cor da tag-->
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam M</p> <!--trocar o tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 35,90</span> <!--alterar o preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+                    
+                    <div class="img-card">
+                        <img src="Imagens/Conjunto Infantil Menino (4 a 5 anos).webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Conjunto Infantil (4 a 5 anos)</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag personalizado"><span>#Infantil</span></div>
+                            <div class="tag large"><span>#Jeans</span></div> <!--trocar cor da tag-->
+                            <div class="tag opium"><span>#Casual</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam P</p> <!--trocar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 19,99</span> <!--trocar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+                    
+                    <div class="img-card"> <!--Trocar imagem da roupa-->
+                        <img src="Imagens/Jaqueta De Capuz Quiksilver À Prova D'água.webp" alt="">
+                    </div>
+
+                    <div class="card-info">
+
+                        <div class="titulo-roupa">
+                            <h3>Jaqueta De Capuz Quiksilver À Prova D'água</h3> <!--Alterar descrição da roupa-->
+                        </div>
+
+                        <div class="tags">
+                            <div class="tag jeans"><span>#Grande</span></div>
+                            <div class="tag opium"><span>#Casual</span></div> <!--Alterar cor da tag-->
+                            <div class="tag azul"><span>#Jaqueta</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam GG</p> <!--Alterar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 120,00</span> <!--Alterar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-card"> <!--Separador dos cards-->
+                <div class="card-roupa">
+
+                    <div class="img-card">
+                        <img src="Imagens/Polo Azul Listrada.jpg" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Polo Aleatory Azul Listrada</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag opium"><span>#Casual</span></div>
+                            <div class="tag lacoste"><span>#Algodão</span></div> <!--trocar cor da tag-->
+                            <div class="tag listrado"><span>#listrado</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam G</p> <!--trocar o tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 65,90</span> <!--alterar o preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+
+                    <div class="selo-beneficiente">
+                        <p class="detalhes">Pacientes em reabilitação
+                            psicossocial do Instituto
+                            de Psiquiatria</p>
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div> <!--Selo beneficiente-->
+                    
+                    <div class="img-card">
+                        <img src="Imagens/Sandália Feminina Conforto - Méliuz,Azul.webp" alt=""> <!--trocar imagem da roupa-->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="titulo-roupa">
+                            <h3>Sandália Conforto - Méliuz,Azul</h3> <!--trocar descrição da roupa-->
+                        </div>
+                        <div class="tags">
+                            <div class="tag passeio"><span>#Passeio</span></div>
+                            <div class="tag y2k"><span>#Verão</span></div> <!--trocar cor da tag-->
+                            <div class="tag opium"><span>#Casual</span></div>
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam 36</p> <!--trocar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 89,90</span> <!--trocar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-roupa">
+                    <div class="selo-beneficiente"> <!--Para tirar ou colocar selo beneficiente-->
+                        <p class="detalhes">Pacientes em reabilitação
+                            psicossocial do Instituto
+                            de Psiquiatria</p>
+                        <img src="Imagens/Handmadew.svg" alt="">
+                    </div>
+                    <div class="img-card"> <!--Trocar imagem da roupa-->
+                        <img src="Imagens/Bone Nk Dri-FIT Esportivo.webp" alt="">
+                    </div>
+
+                    <div class="card-info">
+
+                        <div class="titulo-roupa">
+                            <h3>Bone Nk Dri-FIT Esportivo</h3> <!--Alterar descrição da roupa-->
+                        </div>
+
+                        <div class="tags">
+                            <div class="tag grunge"><span>#Acessorios</span></div>
+                            <div class="tag opium"><span>#Casual</span></div> <!--Alterar cor da tag-->
+                        </div>
+
+                        <div class="tamanho">
+                            <p class="m-0">Tam G</p> <!--Alterar tamanho-->
+                        </div>
+
+                        <div class="preco">
+                            <span class="red">R$ 70,00</span> <!--Alterar preço-->
+                        </div>
+
+                        <div class="card-icons">
+                            <img src="Imagens/icon_carrinho.png" alt="">
+                            <img src="Imagens/icon_like.png" alt="">
+                            <img src="Imagens/Shop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="conteudo-footer">
+    
+                <div class="central-atendimento">
+    
+                    <div id="container-titulo-atendimento">
+    
+                        <h1 class="titulo-footer">CENTRAL DE ATENDIMENTO</h1>
+    
+                    </div>
+    
+                    <div class="conteudo-atendimento">
+    
+                        <img src="imagens/logo zap.png" class="imagem-atendimento" alt="logotipo do whatszap" />
+                        <p class="texto-footer" id="numero-footer">(11) 9999-8888</p>
+    
+                    </div>
+    
+                    <div class="conteudo-atendimento">
+    
+                        <img src="imagens/Email.png" class="imagem-atendimento" id="imagem-atendimento-1"
+                            alt="imagem de uma carta" />
+                        <p class="texto-footer">contato@revest.org.br</p>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="container-integrantes">
+    
+                    <div class="integrantes">
+    
+                        <h1 class="titulo-footer">INTEGRANTES</h1>
+                        <p class="texto-integrantes">César Couto</p>
+                        <p class="texto-integrantes">Gabriel Sora</p>
+                        <p class="texto-integrantes">Giovanna</p>
+                        <p class="texto-integrantes">Gabriel Lopes</p>
+                        <p class="texto-integrantes">Aline</p>
+                        <p class="texto-integrantes">Paulo Cesar</p>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="redes-sociais">
+    
+                    <div id="container-titulo-redes">
+    
+                        <h1 class="titulo-footer" id="titulo-redes-sociais">Redes Socias</h1>
+    
+                    </div>
+    
+                    <div class="imagens-redes">
+    
+                        <img src="imagens/facebook.png" id="img-1" class="imagem-redes" alt="logotipo do facebook" />
+    
+                        <a href="https://www.instagram.com/reveste__oficial/" target="_blank" rel="external"><img
+                                src="imagens/instagram.png" class="imagem-redes" alt="logotipo do instagram" /></a>
+    
+                        <img src="imagens/git hub.png" class="imagem-redes" alt="logotipo do github" />
+    
+                        <img src="imagens/linked in.png" class="imagem-redes" alt="logotipo do linkedin" />
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+    
+            <div class="copyright-footer">
+    
+                <h1 class="titulo-footer">REVESTE <img src="imagens/Circled C.png" id="imagem-copyright"
+                        alt="logotipo do copyright"> 2024  |  todos os direitos reservados</h1>
+    
+            </div>
+    
+        </footer>
+
+        <script src="JavaScript/Breshop.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="JavaScript/header.js"></script>
+    <script src="JavaScript/tema.js"></script>
+    <script src="JavaScript/sacola.js"></script>
+
+    ... <!-- Conteúdo da página -->
+
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+</body>
+</html>

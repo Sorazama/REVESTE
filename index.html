@@ -34,22 +34,80 @@
 
             <div class="icones">
 
-                <div class="icons">
-                    <div id="temas">
-                        <input type="checkbox" class="checkbox" id="chk">
+                <div id="temas">
+                    <input type="checkbox" class="checkbox" id="chk">
+    
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
 
-                        <label class="label" for="chk">
-                            <i class="fas fa-moon"></i>
-                            <i class="fas fa-sun"></i>
-                            <div class="ball"></div>
-                        </label>
+                <i class="fa-solid fa-bag-shopping" onmouseover="mostra_sacola()" onmouseout="resetarTemporizador()" style="color: #ffb800;" ></i>
+
+                <div class="sacola" id="sacola" onmouseover="manterVisivel()" onmouseout="some_sacola()">
+                 
+                     <div class="container-texto-sacola">
+
+                        <img id="triangulo-sacola" src="Imagens/triangulo.png" alt="" />
+
+                         <h2 class="titulo-sacola">minha sacola</h1>
+
+                     </div>
+                     
+
+                    <div class="container-sacola">
+
+                        <div class="imagem-sacola">
+                            <img src="Imagens/jaqueta flanelada.png" alt="">
+                        </div>
+
+                        <div class="texto-sacola">
+                            <h6>Jaqueta Classic</h1>
+                            <h6>Quantidade: 1 R$89,90</h6>
+                        </div>
+
                     </div>
 
-                    <i class="fa-solid fa-bag-shopping" style="color: #ffb800;"></i>
-                    <i class="fa-solid fa-headset" style="color: #ffb800;"></i>
-                    <i class="fa-solid fa-user" style="color: #ffb800;"></i>
+                    
+                    <div class="final-sacola">
+                            <h6>Total (valor sem frete): R$ 89,90</h6>
+                            <button class="btn-sacola">
+                                <h6>VER MINHA SACOLA</h6>
+                            </button>
+                
+                    </div>
+
                 </div>
-                <i class="fa-solid fa-bars " id="menu" style="color: #ffb800;"></i>
+
+                <i class="fa-solid fa-headset" style="color: #ffb800;"></i>
+                
+                <i class="fa-solid fa-user" onmouseover="mostra_perfil()" onmouseout="resetarTemporizador()" style="color: #ffb800;"></i>
+
+                <div class="perfil" id="perfil" onmouseover="manterVisivel()" onmouseout="some_perfil()">
+                    <img id="triangulo-perfil" src="Imagens/triangulo.png" alt="" />
+
+                    <div class="container-texto-perfil">
+                        <h6>para ver seus pedidos e ter uma experiência personalizada, acesse sua conta :)</h6>
+                    </div>
+
+                    <button class="btn-perfil">
+                        <h6>ENTRAR</h6>
+                    </button>
+
+                    <button class="btn-perfil" id="btn-2">
+                        <h6>CADASTRAR-SE</h6>
+                    </button>
+
+                    <div class="container-texto-perfil">
+                        <h6>comprou nas lojas visicas ou no app da reveste? <a href="">Acompanhar pedido</a></h6>
+                    </div>
+                    
+
+                </div>
+            </div>
+
             </div>
         </div>
 
@@ -69,8 +127,8 @@
         <section class="outono">
             <img src="Imagens/folhas.png" alt="" class="folhas">
             <div class="titulo">
-                <h1 class="titulo-1" id="titulo-1">O OUTONO CHEGOU!</h1>
-                <h2 class="titulo-2" id="titulo-2">PEÇAS PARA A TEMPORADA</h2>
+                <h1 class="titulo-1" id="outono-chegou">O OUTONO CHEGOU!</h1>
+                <h2 class="titulo-2" id="outono-chegou">PEÇAS PARA A TEMPORADA</h2>
             </div>
 
             <div class="container-card-home">
@@ -665,7 +723,7 @@
 
             <div class="container-filtro">
                 <div class="filtro-tamanho">
-                    <h1 class="titulo-3">TAMANHOS</h1>
+                    <h1 class="titulo-3" id="h1-tamanhos">TAMANHOS</h1>
                     <div class="container-tamanhos">
                         <div class="tamanho-item">
                             <h1>PP</h1>
@@ -692,9 +750,9 @@
                 </div>
 
 
-                <div class="filtro-preco">
-                    <h1 class="titulo-3">PREÇOS</h1>
-                    <div class="preco-filtro">
+                <div class="filtro-preco" >
+                    <h1 class="titulo-3" id="h1-precos">PREÇOS</h1>
+                    <div class="preco-filtro" id="cor-filtro-div">
                     </div>
 
                     <button class="btn-filtro">
@@ -702,10 +760,10 @@
                 </div>
 
                 <div class="filtro-tags">
-                    <h1 class="titulo-3">#TAGS</h1>
+                    <h1 class="titulo-3" id="h1-tags">#TAGS</h1>
                     <div class="container-tags">
-                        <div class="tag goth"><span>Goth</span></div>
-                        <div class="tag large"><span>Large</span></div>
+                        <div class="tag goth"><span>#Goth</span></div>
+                        <div class="tag large"><span>#Large</span></div>
                         <div class="tag punk"><span>#Punk</span></div>
                         <div class="tag y2k"><span>#y2k</span></div>
                         <div class="tag lacoste"><span>#Lacoste</span></div>
@@ -727,7 +785,7 @@
 
         <!-- Revest Doa -->
         <section class="revest-doa">
-            <h1 class="titulo-1">
+            <h1 class="titulo-1" id="revestindo">
                 REVEST & DOA
             </h1>
 
@@ -763,7 +821,7 @@
         <!-- Quem somos -->
 
         <section class="quem-somos">
-            <h1 class="titulo-1">
+            <h1 class="titulo-1" id="titulo-quem-somos">
                 QUEM SOMOS?
             </h1>
 
@@ -787,6 +845,20 @@
                 </div>
             </div>
         </section>
+
+        ... <!-- Conteúdo da página -->
+
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
     </main>
 
     <footer>
@@ -873,6 +945,7 @@
         crossorigin="anonymous"></script>
     <script src="JavaScript/header.js"></script>
     <script src="JavaScript/tema.js"></script>
+    <script src="JavaScript/sacola.js"></script>
 </body>
 
 </html>
