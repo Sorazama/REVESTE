@@ -1,0 +1,116 @@
+@media screen and (max-width:1209px) {
+    .cabecalho-superior{
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50px;
+
+    }
+
+    .logo img{
+        height: 50px;
+    }
+    .cabecalho-inferior{
+        display: none;
+        color: #ffb800;
+    }
+
+    .search{
+        width: 230px;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+
+
+    .outono{
+        width: 100%;
+    }
+
+    .container-carrossel{
+        width: 400px;
+    }
+
+    .container-revest{
+        width: 100%;
+        height: auto;
+    }
+
+    .img-revest{
+        height: 100%;
+    }
+
+    .btn-2{
+        display: none;
+    }
+
+    .texto-revest{
+        font-size: 18px;
+    }
+
+    .container-quem-somos{
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-endereco{
+        width: auto;
+        font-size: 12px;
+    }
+
+    .img-quem-somos{
+        width: 100%;
+        height: 100%;
+    }
+
+    .texto-quem-somos h1{
+        font-size: 20px;
+        
+    }
+
+    .texto-quem-somos p{
+        font-size: 12px;
+    }
+
+    .btn-local{
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .btn-visitar{
+        width: 200px;
+        font-size: 20px;
+        left: 210px;
+        top: 100px;
+    }
+
+    .header-section{
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+    }
+
+    .header-section img{
+        display: none;
+    }
+
+    .icones{
+        display: none;
+    }
+
+    .conteudo-footerr{
+    font-size: 10px;
+    max-width: 100%;
+    }
+
+}

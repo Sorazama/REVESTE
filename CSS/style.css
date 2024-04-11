@@ -1036,8 +1036,6 @@ main {
     align-items: center;
     height: 70%;
     width: 100%;
-    background-color: green;
-    background-color: red;
 }
 
 .img-revest img {
@@ -1153,19 +1151,27 @@ main {
 footer{
     position: relative;
     width: 100%;
-    height: 420px;
+    height: auto;
     background-color: #1c3c3a;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    gap: 40px;
 }
 
 .conteudo-footer{
     position: relative;
     width: 100%;
-    height: 360px;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ajustfot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .copyright-footer{
@@ -1178,9 +1184,13 @@ footer{
 .central-atendimento{
     position: relative;
     width: 35%;
-    height: 100%;
+    height: auto;
+}
+
+.atenderi{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .container-integrantes{
@@ -1197,18 +1207,8 @@ footer{
     flex-direction: column;
 }
 
-#container-titulo-atendimento{
-    position: relative;
-    font-family: 'poppins';
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    text-align: center;
-    
-}
 
 .titulo-footer{
-    margin-top: 10px;
     font-size: 21px;
     font-weight: 550;
     color: #ffb800;
@@ -1221,8 +1221,6 @@ footer{
     height: 80px;
     display: flex;
     flex-direction: row;   
-    margin-top: 5px;
-    margin-left: 75px;
 }
 
 .imagem-atendimento{
@@ -1230,12 +1228,6 @@ footer{
     height: 40px;
     margin: 0;
     padding: 0;
-    margin-top: 15px;
-    margin-left: 105px;
-}
-
-#imagem-atendimento-1{
-    margin-top: 0;
 }
 
 .texto-footer{
@@ -1253,17 +1245,14 @@ footer{
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 20px;
 }
 
 .texto-integrantes{
     color: #f8f1d7;
     font-family: 'poppins';
     width: 150px;
-    margin-left: 255px;
     margin-bottom: 3px;
     font-size: 18px;
-    padding-top: 7px;  /* pendente alinhar com flex-wrap */
 }
 
 #imagem-copyright{
@@ -1273,7 +1262,6 @@ footer{
 
 #container-titulo-redes{
     text-align: center;
-    padding-top: 17px;
 }
 
 #titulo-redes-sociais{
@@ -1283,18 +1271,11 @@ footer{
 .imagens-redes{
     width: 100%;
     height: 80px;
-    margin-left: 60px;
 }
 
 .imagem-redes{
-    margin-left: 10px;
     width: 50px;
     height: 50px;
-    margin-top: 10px;
-}
-
-#img-1{
-    margin-left: 110px;
 }
 
 .nofound{
@@ -1309,62 +1290,4 @@ footer{
 }
 .error{
     display:none;
-}
-
-@media screen and (max-width:1209px) {
-    .cabecalho-superior{
-        justify-content: space-between;
-    }
-
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:50px;
-
-    }
-
-    .logo img{
-        height: 50px;
-    }
-    .cabecalho-inferior{
-        display: none;
-        color: #ffb800;
-    }
-
-    .search{
-        width: 230px;
-    }
-
-    .icons{
-        display: none;
-    }
-
-    #menu{
-        display: block;
-    }
-
-
-
-    .outono{
-        width: 100%;
-    }
-
-    .container-carrossel{
-        display: none;
-    }
-
-    .quem-somos, .revest-doa{
-       display: none;
-    }
-
-    .header-section{
-        flex-direction: column;
-        height: 200px;
-        text-align: center;
-    }
-
-    .header-section img{
-        display: none;
-    }
 }

@@ -470,161 +470,147 @@ li a {
 
                                         /*Rodape*/
 
-footer{
-    position: relative;
-    width: 100%;
-    height: 420px;
-    background-color: #1c3c3a;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
+                                        footer{
+                                            position: relative;
+                                            width: 100%;
+                                            height: auto;
+                                            background-color: #1c3c3a;
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 40px;
+                                        }
                                         
-.conteudo-footer{
-    position: refoolative;
-    width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: row;
-}
+                                        .conteudo-footer{
+                                            position: relative;
+                                            width: 100%;
+                                            height: auto;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: space-around;
+                                        }
                                         
-.copyright-footer{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-}
+                                        .ajustfot{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            margin-top: 20px;
+                                        }
                                         
-.central-atendimento{
-    position: relative;
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+                                        .copyright-footer{
+                                            position: relative;
+                                            width: 100%;
+                                            height: 60px;
+                                            text-align: center;
+                                        }
                                         
-.container-integrantes{
-    position: relative;
-    width: 35%;
-    height: 100%;
-}
+                                        .central-atendimento{
+                                            position: relative;
+                                            width: 35%;
+                                            height: auto;
+                                        }
                                         
-.redes-sociais{
-    position: relative;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+                                        .atenderi{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 10px;
+                                        }
                                         
-#container-titulo-atendimento{
-    position: relative;
-    font-family: 'poppins';
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    text-align: center;
-                                            
-}
+                                        .container-integrantes{
+                                            position: relative;
+                                            width: 35%;
+                                            height: 100%;
+                                        }
                                         
-.titulo-footer{
-    margin-top: 10px;
-    font-size: 21px;
-    font-weight: 550;
-    color: #ffb800;
-}
+                                        .redes-sociais{
+                                            position: relative;
+                                            width: 30%;
+                                            height: 100%;
+                                            display: flex;
+                                            flex-direction: column;
+                                        }
                                         
                                         
-.conteudo-atendimento{
-    position: relative;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;   
-    margin-top: 5px;
-}
+                                        .titulo-footer{
+                                            font-size: 21px;
+                                            font-weight: 550;
+                                            color: #ffb800;
+                                        }
                                         
-.imagem-atendimento{
-    width: 50px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    margin-top: 15px;
-    margin-left: 105px;
-}
                                         
-#imagem-atendimento-1{
-    margin-top: 0;
-}
+                                        .conteudo-atendimento{
+                                            position: relative;
+                                            width: 100%;
+                                            height: 80px;
+                                            display: flex;
+                                            flex-direction: row;   
+                                        }
                                         
-.texto-footer{
-    color: #f8f1d7;
-    font-family: 'poppins';
-    padding-top: 7px;
-    font-size: 17px;
-}
+                                        .imagem-atendimento{
+                                            width: 50px;
+                                            height: 40px;
+                                            margin: 0;
+                                            padding: 0;
+                                        }
                                         
-#numero-footer{
-padding-top: 23px;
-}
+                                        .texto-footer{
+                                            color: #f8f1d7;
+                                            font-family: 'poppins';
+                                            padding-top: 7px;
+                                            font-size: 17px;
+                                        }
                                         
-.integrantes{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
+                                        #numero-footer{
+                                            padding-top: 23px;
+                                        }
                                         
-.texto-integrantes{
-    color: #f8f1d7;
-    font-family: 'poppins';
-    width: 150px;
-    margin-left: 185px;
-    margin-bottom: 3px;
-    font-size: 18px;
-    padding-top: 7px;
-}
+                                        .integrantes{
+                                            width: 100%;
+                                            height: 100%;
+                                            text-align: center;
+                                        }
                                         
-#imagem-copyright{
-    width: 25px;
-    height: 25px;
-}
+                                        .texto-integrantes{
+                                            color: #f8f1d7;
+                                            font-family: 'poppins';
+                                            width: 150px;
+                                            margin-bottom: 3px;
+                                            font-size: 18px;
+                                        }
                                         
-#container-titulo-redes{
-    text-align: center;
-    padding-top: 17px;
-}
+                                        #imagem-copyright{
+                                            width: 25px;
+                                            height: 25px;
+                                        }
                                         
-#titulo-redes-sociais{
-    font-size: 23px;
-}
+                                        #container-titulo-redes{
+                                            text-align: center;
+                                        }
                                         
-.imagens-redes{
-    width: 100%;
-    height: 80px;
-}
+                                        #titulo-redes-sociais{
+                                            font-size: 23px;
+                                        }
                                         
-.imagem-redes{
-    margin-left: 5px;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
+                                        .imagens-redes{
+                                            width: 100%;
+                                            height: 80px;
+                                        }
                                         
-#img-1{
-    margin-left: 110px;
-}
-
-.nofound{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.nofound img{
-    height: 300px;
-}
-.error{
-    display:none;
-}
+                                        .imagem-redes{
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+                                        
+                                        .nofound{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                        }
+                                        
+                                        
+                                        .nofound img{
+                                            height: 300px;
+                                        }
+                                        .error{
+                                            display:none;
+                                        }
+                                        
