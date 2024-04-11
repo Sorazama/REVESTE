@@ -614,3 +614,17 @@ padding-top: 23px;
 #img-1{
     margin-left: 110px;
 }
+
+.nofound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nofound img{
+    height: 300px;
+}
+.error{
+    display:none;
+}

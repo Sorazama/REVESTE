@@ -59,6 +59,9 @@ body.dark h1#titulo-quem-somos {
     /* Cor para o modo escuro */
 }
 
+body.dark div#cor-filtro-div{
+    background-color: #BA6735 ;
+}
 
 
 
@@ -957,6 +960,7 @@ main {
     width: 100px;
     background-color: var(--cor-titulo);
     border-radius: 10px;
+
 }
 
 .btn-filtro {
@@ -1291,6 +1295,20 @@ footer{
 
 #img-1{
     margin-left: 110px;
+}
+
+.nofound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nofound img{
+    height: 300px;
+}
+.error{
+    display:none;
 }
 
 @media screen and (max-width:1209px) {
