@@ -70,6 +70,12 @@
     font-size: 18px;
     margin-right: 5px;
 }
+
+body.dark h2#titulo-suporte, 
+body.dark h2#titulo-2,
+body.dark h2#titulo-suporte-1{
+    color: #BA6735;
+}
                                      /*Menu da sacola*/
 .sacola {
     width: 400px;
