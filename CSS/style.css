@@ -248,6 +248,7 @@ body.dark h1#titulo-quem-somos {
     font-family: 'poppins';
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 #sacola{
@@ -343,6 +344,7 @@ body.dark h1#titulo-quem-somos {
     visibility: hidden;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 #triangulo-perfil{

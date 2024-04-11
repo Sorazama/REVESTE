@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/personalizado.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Reveste - Personalizado</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,10 +22,6 @@
             </div>
 
             <input type="text" class="search" id="search" placeholder="Olá, o que você procura?" onkeyup="search()">
-            <button class="lupa"><img src="Imagens/Search.svg" alt=""></button>
-
-
-
 
             <div class="icones">
 
@@ -122,7 +118,15 @@
 
     <main>
 
-        <div class="container-card" id="container-card-1"> <!--Separador dos cards-->
+        <div class="container-card" id="container-card-1">
+
+
+            <div class="nofound error" id="nofound">
+                <img src="Imagens/nofound.webp" alt="">
+                <h1 class="titulo-2">Desculpe!</h1>
+                <h2 class="subtitulo">Não encontramos o sua pesquisa.</h2>
+            </div>
+
             <div class="card-roupa">
 
                 <div class="selo-beneficiente">
@@ -235,8 +239,7 @@
                 </div>
             </div>
 
-        </div>
-        <div class="container-card"> <!--Separador dos cards-->
+        
             <div class="card-roupa">
 
                 <div class="selo-beneficiente">
@@ -353,8 +356,8 @@
                 </div>
             </div>
 
-        </div> <!-- copiar até aqui-->
-        <div class="container-card"> <!--Separador dos cards-->
+        
+        
             <div class="card-roupa">
 
 
@@ -467,9 +470,7 @@
                 </div>
             </div>
 
-        </div>
-        <div class="container-card"> <!--Separador dos cards-->
-            <div class="card-roupa">
+                    <div class="card-roupa">
 
                 <div class="selo-beneficiente">
                     <p class="detalhes">Ajude pessoas em situação de vulnerabilidade social abrigadas na Casa
@@ -586,7 +587,7 @@
                 </div>
             </div>
 
-        </div>
+        
     
     </main>
 

@@ -660,6 +660,11 @@ li a {
     margin-bottom: 15px;
 }
 
+input {
+    padding: 12px;
+    outline: yellow;
+}
+
 .btn-entrar{
     height: 100px;
 }
