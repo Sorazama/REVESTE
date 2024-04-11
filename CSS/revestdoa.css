@@ -317,6 +317,11 @@ body.dark h1#titulo-quem-somos {
     margin-top: 5px;
 }
 
+.btn-perfil a{
+    text-decoration: none;
+    color: #FFB800;
+}
+
 #btn-2{
     margin-top: 10px;
     background-color: transparent;
