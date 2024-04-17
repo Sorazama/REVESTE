@@ -1,0 +1,628 @@
+                            /*Fonte Poppins*/
+                            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                            /*Fonte Poppins Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                            /*Font Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                                /*CSS Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+                                /*Header*/
+
+.cabecalho {
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    z-index: 999;
+}
+                                                                
+.cabecalho-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    padding: 20px;
+    background-color: #1C3C3A;
+}
+                                                                
+.cabecalho-inferior {
+    font-family: 'poppins';
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    background-color: #FFB800;
+                                    
+}
+                                                                
+.cabecalho-inferior.rolagem-nav{
+                                                                    
+    height: 45%;
+    height: 0;   
+    transition: width 1s, height 1s, opacity 1s;
+}
+                                                                
+.logo img {
+    height: 80px;
+}
+                                                                
+.container-search {
+    position: relative;
+}
+                                                                
+.search {
+    padding: 10px;
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    background-color: #FFECA4;
+                                                                
+}
+                                
+.lupa {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    top: 5px;
+                                
+}
+                                                                
+.lupa img {
+    height: 25px;
+}
+                                                                
+.icones {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+                                
+#temas {
+    gap: 0px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+                                
+.sacola {
+    width: 400px;
+    height: 310px;
+    background-color: #285552; /*#999483;*/
+    position: absolute;
+    right: 5px;
+    margin-top: 40px;
+    visibility: hidden;
+    transition: visibility 0.5s linear; 
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+}
+                                
+#sacola{
+    transition: opacity 0.5s ease;
+}
+                                
+.container-texto-sacola{
+    margin-left: 40px;
+    width: 80%;
+}
+                                
+#triangulo-sacola{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 52px;
+    bottom: 254px;
+}
+                                
+.titulo-sacola{
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFB800;
+    color: #FFB800;
+}
+                                
+.container-sacola {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+     border-bottom: 1px solid #FFB800;
+     padding-bottom: 7px;
+    margin-left: 20px;
+}
+                                
+.imagem-sacola {
+    width: 150px;
+        height: 100%;
+    margin-left: 0px;
+}
+                                
+.imagem-sacola img {
+    width: 100%;
+    height: 100%;
+}
+                                
+.texto-sacola {
+    width: 200px;
+    height: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    color: #FFB800;
+}
+                                
+.final-sacola{
+    width: 100%;
+    height: 100%;
+    padding-left: 120px;
+    padding-top: 10px;
+    color:#FFB800 ;
+}
+                                
+.btn-sacola {
+    height: 40px;
+    width: 180px;
+    color: #FFB800;
+    background-color: #252525;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'prompt';
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 80px;
+    padding-top: 5px;
+}
+                                
+.perfil{
+    width: 300px;
+    height: 310px;
+    background-color: #285552; /*#999483;*/
+    position: absolute;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-family: 'poppins';
+    right: 10px;
+    margin-top: 40px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+                                
+#triangulo-perfil{
+    position: absolute;
+    margin-left: 271px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 52px;
+    bottom: 254px;
+}
+                                
+.container-texto-perfil{
+    width: 90%;
+    height: 80px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 15px;
+    color:#FFB800 ;
+}
+                                
+.container-texto-perfil a {
+    color: #000;
+}
+                                
+.btn-perfil {
+    height: 50px;
+    width: 90%;
+    color: #FFB800;
+    background-color: #252525;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'prompt';
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 15px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+                                
+.btn-perfil a{
+    text-decoration: none;
+    color: #FFB800;
+}
+                                
+#btn-2{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid #FFB800;
+}
+                                                                
+.cabecalho-inferior ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+                                                                
+#nav-link.nav-list{
+    display: none;
+}
+                                                                
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    width: 20%;
+    height: 100%;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+                                                                
+li:hover {
+    background-color: rgb(220, 158, 0)
+}
+                                                                
+li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+}
+                                                                
+.nav-icon {
+    height: 30px;
+}
+                                
+.checkbox {
+    opacity: 0;
+    position: absolute;
+                                
+}
+                                
+.label{
+                                
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+                                
+.label .ball{
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.25s linear;
+}
+                                
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+                                
+.fa-moon{
+    color: #f1c40f;
+}
+                                
+.fa-sun{
+    color: #f39c12;
+}
+
+                                /*Main*/
+
+.geral{
+    width: 100%;
+    height: 730px;
+    color: #1C3C3A;
+    display: flex;
+    flex-direction: row;
+}
+
+.cesta{
+    width: 800px;
+    height: 600px;
+    margin-left: 150px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+.titulos-principais{
+    font-size: 27px;
+}
+
+.produtos{
+    width: 100%;
+    height: 450px;
+}
+
+.produtos-descricao{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #1C3C3A;
+}
+
+.titulo-produto{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 35px;
+}
+
+.quantidade-produto{
+    width: 400px;
+    height: 70px;
+    margin-left: 310px;
+    display: flex;
+    flex-direction: row;
+}
+
+#titulo-produto-1{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+#titulo-produto-2{
+    padding-right: 30px;
+}
+
+.produto-card{
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-imagem-produto{
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.container-imagem-produto img{
+    width: 100%;
+    height: 100%;
+}
+
+#texto-produto{
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.descricao-produtos{
+    width: 350px;
+    height: 100px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.quantidade{
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#quantidade-1{
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.container-cep{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-cep{
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.cep{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#input-cep{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: 1px solid #1C3C3A;
+}
+
+.btn-cep{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #1C3C3A;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.cep-texto{
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.container-carrinho-de-compra{
+    width: 350px;
+    height: 450px;
+    background-color: #d6d6d657;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+#preço-carrinho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #1C3C3A;
+    padding-bottom: 15px;
+}
+
+.titulo-carrinho{
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.texto-carrinho{
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.texto-preço{
+    font-size: 18px;
+    padding-top: 53px;
+    padding-left: 200px;
+    font-weight: 800;
+}
+
+.btn-comprar{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#1C3C3A ;
+    color:#FFB800 ;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.texto-comprar{
+    text-align: center;
+    height: 50px;
+}
+
+#texto-compra-1{
+    padding-top: 15px;
+}
+
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Oculta por padrão */
+    position: fixed; /* Permite que o modal fique por cima de outros elementos */
+    z-index: 1; /* Posiciona o modal na frente dos outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona rolagem se o conteúdo do modal for muito grande */
+    background-color: rgba(0, 0, 0, 0.941); /* Fundo preto com transparência */
+    background-color: rgba(0, 0, 0, 0.745); /* Fundo preto com transparência */
+  }
+  
+  /* Estilo para o conteúdo do modal */
+  .modal-content {
+    background-color: #1C3C3A;
+    margin: 10% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Define a largura do modal */
+  }
+  
+  /* Estilo para o botão de fechar 
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  */
+  .conteudo-modal{
+      width: 100%;
+      height: 500px;
+  }
+  
+  .container-imagem-modal{
+      width: 250px;
+      height: 250px;
+      margin-left: 440px;
+  }
+  
+  .container-imagem-modal img{
+      width: 100%;
+      height: 100%;
+  }
+  
+  .titulo-modal{
+      font-size: 45px;
+      font-family: 'poppins';
+      text-align: center;
+      padding-top: 15px;
+      color: #FFB800 ;
+  }
+  
+  .sub-titulo-modal{
+      text-align: center;
+      font-family: 'poppins';
+      padding-top: 10px;
+      font-size: 30px;
+      color: #FFB800 ;
+  }
+  
+  .btn-modal{
+      align-items: center;
+      width: 130px;
+      height: 70px;
+      margin-top: 15px;
+      margin-left: 500px;
+      background-color:#FFB800;
+      color:#1C3C3A;
+      border-radius: 10px;
+      font-weight: 700;
+  }

@@ -59,9 +59,32 @@ body.dark h1#titulo-quem-somos {
     /* Cor para o modo escuro */
 }
 
+body.dark .texto-1{
+    color: #BA6735;
+}
+
+body.dark .titulo-roupas{
+    color: #BA6735;
+}
+
+body.dark .container-cards{
+    color: #BA6735;
+}
+
 body.dark div#cor-filtro-div{
     background-color: #BA6735 ;
 }
+
+body.dark .cesta{
+    color: #FFB800;
+}
+
+body.dark .container-carrinho-de-compra{
+    color: #FFB800;
+}
+
+
+
 
 
 
@@ -536,6 +559,11 @@ main {
     flex-wrap: wrap;
     width: 100%;
     padding: 30px;
+    text-decoration: none;
+}
+
+.container-card-home a{
+    text-decoration: none;
 }
 
 .card-roupa {
@@ -547,6 +575,7 @@ main {
     font-family: 'prompt';
     box-shadow: -9px 13px 15px -3px rgba(0, 0, 0, 0.1);
     list-style: none;
+   
 }
 .img-card {
     height: 60%;
@@ -571,19 +600,21 @@ main {
     height: 40%;
     width: 100%;
     padding: 5px;
+    text-decoration: none;
 }
 
 .titulo-roupa {
     width: 100%;
-
+    text-decoration: none;
     font-size: 0.7rem;
 
 }
 
 .titulo-roupa h3 {
-
+    color: #000;
     font-weight: 500;
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
 .tags {
@@ -591,6 +622,7 @@ main {
     justify-content: center;
     width: 100%;
     gap: 10px;
+    text-decoration: none;
 }
 
 .tag {
